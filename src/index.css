@@ -1,13 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F3F5FA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.side-in
+{
+  @apply flex justify-start w-52 pl-5 py-5 gap-5 h-10 rounded-md items-center hover:bg-gray-200
+}
+.side-in span
+{
+  @apply justify-self-start 
+}
+.input-label
+{
+  @apply flex flex-col
+}
+.bold-header
+{
+  @apply font-bold
+}
+.bidStrat
+{
+  @apply text-blue-600 underline text-center 
+}
+.report
+{
+  @apply font-semibold text-blue-500
 }
