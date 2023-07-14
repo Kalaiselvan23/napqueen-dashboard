@@ -22,7 +22,12 @@ code {
 }
 .side-in
 {
-  @apply flex justify-start w-52 pl-5 py-5 gap-5 h-10 rounded-md items-center hover:bg-gray-200
+  @apply flex justify-start w-52 pl-5 py-5 gap-5 h-10 rounded-md items-center
+}
+.side-in:hover
+{
+  color:rgb(119,72,151);
+  font-weight:bold;
 }
 .side-in span
 {
