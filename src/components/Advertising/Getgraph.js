@@ -1,4 +1,5 @@
 import React from "react";
+import Chart  from "chart.js/auto";
 import { TrendingDown, TrendingUpOutlined } from "@mui/icons-material";
 import { Bar, Line } from "react-chartjs-2";
 const options = {
@@ -25,7 +26,7 @@ const Getgraph = (graph) => {
         <div className="flex gap-4 justify-between my-5">
         {graph.subDivs.map(getSubdiv)}
         </div>
-        {graph.type==="line"?<Line data={graph.data} options={options}/>:<Bar data={graph.data} options={options} />}
+        {graph.type==="line"?<Line data={graph.data} options={options} />:<Bar data={graph.data} options={options}/>}
       </div>
     </div>
   );
