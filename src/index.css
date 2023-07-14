@@ -16,7 +16,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.select
+{
+  @apply font-semibold p-2
+}
 .side-in
 {
   @apply flex justify-start w-52 pl-5 py-5 gap-5 h-10 rounded-md items-center hover:bg-gray-200
@@ -40,4 +43,8 @@ code {
 .report
 {
   @apply font-semibold text-blue-500
+}
+.campaign-btns button
+{
+  @apply border-2 border-gray-300 mx-1 p-1
 }

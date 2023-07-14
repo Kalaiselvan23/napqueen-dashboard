@@ -2,23 +2,42 @@ const graphDatas=[
     {
         type:"line",
         data:{
-            labels:[23,24,25,26,27,28,29,30],
+            labels:[23,24,25,26,27,28,29,30,1,2,3,4],
             datasets:[
               {
               label:"ACOS",
               backgroundColor:"blue",
               borderColor:"blue",
-              data:[0,0,1000,5000,50000,100]
+              data:[0,2,0.1,0.1,8,0.4,11,2,8,0.2,9,6]
               },
               {
                 label:"CTR",
                 backgroundColor:"red",
                 borderColor:"red",
-                data:[0,0,10,50,50,100000]
+                data:[5,5,7,4,7,9,3.5,7.5,6.6,7.5,3,5,6]
                 },
             ]
           },
-          graphTitle:"Ads Spend and Revenue",
+          options:{
+            scales: {
+            x: {
+              title: {
+                display: true,
+                text: 'Date September 23-4',
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Ads Revenue',
+              },
+              ticks: {
+                callback: (value) => `$${value}k`,
+              },
+            },
+          },
+        },
+          graphTitle:"Ads Spend & Revenue",
           subDivs:[
             {
                 head:"Ads Spend",
@@ -49,22 +68,41 @@ const graphDatas=[
     {
         type:"line",
         data:{
-            labels:[23,24,25,26,27,28,29,30],
+            labels:[23,24,25,26,27,28,29,30,1,2,3,4],
             datasets:[
               {
               label:"Date Sep 23-24",
               backgroundColor:"blue",
               borderColor:"blue",
-              data:[0,0,1000,5000,5,1000]
+              data:[5,5,7,4,7,9,3.5,7.5,6.6,7.5,3,5,6]
               },
               {
                 label:"CTR",
-                backgroundColor:"red",
-                borderColor:"red",
-                data:[0,0,10,50,50,100000]
+                backgroundColor:"#32D0D0",
+                borderColor:"#32D0D0",
+                data:[25,2,0.9,8,0.1,0.12,10,2,8,0.3,9,7]
                 },
             ]
           },
+          options:{
+            scales: {
+            x: {
+              title: {
+                display: true,
+                text: 'Date September 23-4',
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'Clicks',
+              },
+              ticks: {
+                callback: (value) => `$${value}k`,
+              },
+            },
+          },
+        },
           graphTitle:"Click Through Rate & Clicks",
           subDivs:[
             {
@@ -96,17 +134,30 @@ const graphDatas=[
               label:"Date Sep 23-24",
               backgroundColor:"blue",
               borderColor:"blue",
-              data:[0,0,1000,5000,5,1000]
+              data:[5,5,7,4,7,9,3.5,7.5,6.6,7.5,3,5,6]
               },
-              {
-                label:"CTR",
-                backgroundColor:"red",
-                borderColor:"red",
-                data:[0,0,10,50,50,100000]
-                },
             ]
           },
-          graphTitle:"Conversion Rate & Order",
+          options:{
+            scales: {
+            x: {
+              title: {
+                display: true,
+                text: 'Date September 23-4',
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: 'CVR',
+              },
+              ticks: {
+                callback: (value) => `$${value}k`,
+              },
+            },
+          },
+        },
+          graphTitle:"Conversation Rate & Order",
           subDivs:[
             {
                 head:"CVR",

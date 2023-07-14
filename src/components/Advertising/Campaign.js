@@ -1,11 +1,22 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-
+import FilterListIcon from '@mui/icons-material/FilterList';
+import ViewColumnIcon from '@mui/icons-material/ViewColumn';
 import {columns,rows} from "../../Datas/tableDatas"
+import DownloadIcon from '@mui/icons-material/Download';
 const Campaign = () => {
   return (
+    <div>
+      <div className="flex justify-between items-center w-full p-5">
+    <span className="text-2xl font-extrabold text-left">All Campaign</span>
+    <div className="campaign-btns">
+    <button><FilterListIcon/><span>Filter</span></button>
+    <button><ViewColumnIcon/><span>Column</span></button>
+    <button><DownloadIcon/><span>Download</span></button>
+    </div>
+    </div>
+   
     <div className="p-7 border-2 bg-white">
-      <h1 className="text-3xl font-extrabold text-left my-4">All Campaign</h1>
       <div>
         <DataGrid
           rows={rows}
@@ -19,6 +30,7 @@ const Campaign = () => {
           checkboxSelection
         />
       </div>
+    </div>
     </div>
   );
 };

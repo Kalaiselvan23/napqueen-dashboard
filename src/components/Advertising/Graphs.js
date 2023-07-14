@@ -5,7 +5,7 @@ import Getgraph from './Getgraph';
 
 const Graphs = () => {
   return (
-    <div className='flex gap-5 p-5 pl-10 w-full'>
+    <div className='flex gap-5 p-5 w-full'>
     {graphDatas.map(Getgraph)}
     </div>
   )

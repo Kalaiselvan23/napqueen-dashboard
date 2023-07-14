@@ -11,7 +11,7 @@ const Topbar = () => {
   };
 
   return (
-    <div className='h-16 border-b-2 w-full flex justify-between px-4 items-center z-0 bg-white'>
+    <div className='h-16 border-b-2 w-full flex justify-between px-4 items-center z-0 bg-white fixed top-0'>
       <button onClick={handleMenuClick}>
         <MenuIcon />
       </button>
